@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundry Coworking — Aluguéis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="alugueis.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="logo__mark">
+          <img src="img/semfundofoundry-LOGO.png" alt="Logo Foundry">
+        </div>
+        <div>
+          <h1>Foundry Coworking</h1>
+          <div class="tag">Aluguéis de Salas</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h3>Salas Disponíveis para Aluguel</h3>
+        <div class="rooms">
+          <div class="room">
+            <img src="https://img.lovepik.com/photo/50041/3971.jpg_wh860.jpg" alt="Hot Desk">
+            <div class="room-content">
+              <h4>Hot Desk</h4>
+              <p class="tag">Estações compartilhadas com internet de alta velocidade</p>
+              <button class="btn-alugar" data-sala="Hot Desk">Alugar Hot Desk</button>
+            </div>
+          </div>
+
+          <div class="room">
+            <img src="https://images.unsplash.com/photo-1590608897129-79da98d15969?auto=format&fit=crop&w=800&q=60" alt="Sala Privativa">
+            <div class="room-content">
+              <h4>Sala Privativa</h4>
+              <p class="tag">Salas fechadas para equipes</p>
+              <button class="btn-alugar" data-sala="Sala Privativa">Alugar Sala Privativa</button>
+            </div>
+          </div>
+
+          <div class="room">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Estúdio">
+            <div class="room-content">
+              <h4>Estúdio / Sala de Gravação</h4>
+              <p class="tag">Ambiente tratado acusticamente para podcasts e vídeos</p>
+              <button class="btn-alugar" data-sala="Estúdio">Alugar Estúdio</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="logo__mark" style="width:56px;height:56px">
+          <img src="img/semfundofoundry-LOGO.png" alt="Logo"/>
+        </div>
+        <div>
+          <div style="font-weight:700">Foundry Coworking</div>
+          <div class="tag">Forjando conexões e negócios</div>
+        </div>
+      </div>
+
+      <div class="team">
+        <div class="person">
+          <div class="person__name">Brendow Rodrigues</div>
+          <div class="person__role">CEO</div>
+        </div>
+        <div class="person">
+          <div class="person__name">Lucas Canteri</div>
+          <div class="person__role">COO</div>
+        </div>
+        <div class="person">
+          <div class="person__name">Diego Alejandro</div>
+          <div class="person__role">CFO</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p id="modal-text"></p>
+      <div class="modal-buttons">
+        <button id="confirm-btn">Sim</button>
+        <button id="cancel-btn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
